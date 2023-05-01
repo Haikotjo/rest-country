@@ -1,0 +1,95 @@
+.yellow {
+    background-color: #b58f57;
+    border: #0a2e53 5px solid;
+}
+.brown {
+    background-color: #6f2c2c;
+    border: #0a2e53 5px solid;
+}
+.blue {
+   background-color: #0a2e53;
+    border: #0a2e53 5px solid;
+}
+.turquoise {
+    background-color: #077268;
+    border: #0a2e53 5px solid;
+}
+.green {
+    background-color: #66953c;
+    border: #0a2e53 5px solid;
+}
+.cold {
+    background-color: coral;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the Let's go! header */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Style the list of countries */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Style each country item */
+li {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 1rem;
+    overflow: hidden;
+
+}
+
+/* Style the country name */
+li p, h1 {
+    /*font-size: 1.5rem;*/
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+/* Style the flag image */
+li img {
+    margin-top: 10px;
+    display: flex;
+    width: 50px;
+    border-radius: 15px;
+    border: white 5px solid;
+}
+
+/* Style the error message */
+.error-message {
+    font-size: 2rem;
+    color: red;
+    margin-top: 1rem;
+}
+/* In your styles.css file */
+body {
+    font-family: 'Merriweather', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}

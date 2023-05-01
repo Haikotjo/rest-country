@@ -5,6 +5,7 @@ console.log('Hallo daar!');
 const countryList = document.getElementById("countries");
 const errorMessage = document.getElementById("errors");
 
+
 function regionColor( region ) {
     let color
     if ( region === "Americas" ) {
@@ -17,20 +18,26 @@ function regionColor( region ) {
         color = "blue"
     }else if ( region === "Asia" ) {
         color = "green"
+    }else if ( region === "Antarctic" ) {
+        color = "cold"
     }
     return color
+}
+function sort(countries) {
+    countries.sort((a, b) => b.population - a.population);
 }
 async function fetchData() {
     try {
         const result = await axios.get('https://restcountries.com/v3.1/all')
         const countries = result.data;
-        countries.sort((a, b) => b.population - a.population);
+        console.log(result.data)
+        sort(countries)
         countries.map((country) => {
-            const countryListItem = document.createElement("li");
             countryList.innerHTML += `
         <li class="${regionColor(country.region)}">
-        <h4>${country.name.common}</h4>
+        <h2 class="country-name">${country.name.common}</h2>
         <p>Has a population of: ${country.population}</p>
+        <p>Languages: ${Object.values(country.languages).join(', ')}</p>
         <img class="flag" src="${country.flags.svg}" alt="${country.flag.alt}">
          </li>
             `;

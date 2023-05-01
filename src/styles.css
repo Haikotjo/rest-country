@@ -3,7 +3,7 @@
     border: #0a2e53 5px solid;
 }
 .brown {
-    background-color: #783636;
+    background-color: #6f2c2c;
     border: #0a2e53 5px solid;
 }
 .blue {
@@ -17,6 +17,9 @@
 .green {
     background-color: #66953c;
     border: #0a2e53 5px solid;
+}
+.cold {
+    background-color: coral;
 }
 
 main {
@@ -81,4 +84,12 @@ li img {
     font-size: 2rem;
     color: red;
     margin-top: 1rem;
+}
+/* In your styles.css file */
+body {
+    font-family: 'Merriweather', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
 }

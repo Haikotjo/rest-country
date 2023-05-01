@@ -4,7 +4,7 @@
 }
 
 .brown {
-  background-color: #783636;
+  background-color: #6f2c2c;
   border: 5px solid #0a2e53;
 }
 
@@ -21,6 +21,10 @@
 .green {
   background-color: #66953c;
   border: 5px solid #0a2e53;
+}
+
+.cold {
+  background-color: coral;
 }
 
 main {
@@ -77,6 +81,14 @@ li img {
   color: red;
   margin-top: 1rem;
   font-size: 2rem;
+}
+
+body {
+  font-family: Merriweather, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto, sans-serif;
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
